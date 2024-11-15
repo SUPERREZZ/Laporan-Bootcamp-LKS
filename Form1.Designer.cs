@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.datagridview = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sekolah = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namatb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.sekolahcb = new System.Windows.Forms.ComboBox();
@@ -36,9 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.kotacb = new System.Windows.Forms.ComboBox();
             this.Simpanbtn = new System.Windows.Forms.Button();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sekolah = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDtb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,27 @@
             this.datagridview.Size = new System.Drawing.Size(741, 198);
             this.datagridview.TabIndex = 0;
             this.datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellContentClick);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.Visible = false;
+            // 
+            // Nama
+            // 
+            this.Nama.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nama.DataPropertyName = "Nama";
+            this.Nama.HeaderText = "Nama";
+            this.Nama.Name = "Nama";
+            // 
+            // Sekolah
+            // 
+            this.Sekolah.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Sekolah.DataPropertyName = "Sekolah";
+            this.Sekolah.HeaderText = "Sekolah";
+            this.Sekolah.Name = "Sekolah";
             // 
             // namatb
             // 
@@ -118,26 +140,13 @@
             this.Simpanbtn.UseVisualStyleBackColor = true;
             this.Simpanbtn.Click += new System.EventHandler(this.Simpanbtn_Click);
             // 
-            // id
+            // IDtb
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.Visible = false;
-            // 
-            // Nama
-            // 
-            this.Nama.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nama.DataPropertyName = "Nama";
-            this.Nama.HeaderText = "Nama";
-            this.Nama.Name = "Nama";
-            // 
-            // Sekolah
-            // 
-            this.Sekolah.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Sekolah.DataPropertyName = "Sekolah";
-            this.Sekolah.HeaderText = "Sekolah";
-            this.Sekolah.Name = "Sekolah";
+            this.IDtb.Location = new System.Drawing.Point(334, 134);
+            this.IDtb.Name = "IDtb";
+            this.IDtb.Size = new System.Drawing.Size(201, 20);
+            this.IDtb.TabIndex = 8;
+            this.IDtb.Visible = false;
             // 
             // Form1
             // 
@@ -152,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.namatb);
             this.Controls.Add(this.datagridview);
+            this.Controls.Add(this.IDtb);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).EndInit();
@@ -173,6 +183,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sekolah;
+        private System.Windows.Forms.TextBox IDtb;
     }
 }
 

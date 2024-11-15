@@ -29,6 +29,7 @@ namespace laporan1
                 var data = db.Students.FirstOrDefault(d => d.ID == id);
                 if (data != null)
                 {
+                    IDtb.Text = Convert.ToString(data.ID);
                     namatb.Text = data.Nama;
                     sekolahcb.SelectedValue = data.SekolahID;
                     kotacb.SelectedValue = data.KotaID;
@@ -48,6 +49,10 @@ namespace laporan1
                         MessageBoxButtons.YesNo,                  
                         MessageBoxIcon.Question                   
 );
+                    if (result == DialogResult.No)
+                    {
+                        return;
+                    }
                     db.Students.Remove(data);
                     db.SaveChanges();
                     load();
@@ -56,6 +61,8 @@ namespace laporan1
         }
         private void load()
         {
+            namatb.Text = "";
+            IDtb.Text = "";
             sekolahcb.DataSource = db.Sekolahs.ToList<Sekolah>();
             sekolahcb.DisplayMember = "Nama";
             sekolahcb.ValueMember = "ID";
@@ -96,10 +103,9 @@ namespace laporan1
 
         private void Simpanbtn_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(namatb.Text) && sekolahcb.Items != null && kotacb.Items != null)
+            if (!string.IsNullOrWhiteSpace(namatb.Text) && sekolahcb.Items != null && kotacb.Items != null )
             {
-                var check = db.Students.FirstOrDefault(s => s.Nama == namatb.Text);
-                if (check == null)
+                if (string.IsNullOrWhiteSpace(IDtb.Text))
                 {
                     Student student = new Student
                     {
@@ -111,6 +117,18 @@ namespace laporan1
                 }
                 else 
                 {
+                    int id = Convert.ToInt32(IDtb.Text);
+                    var check = db.Students.FirstOrDefault(s => s.ID == id );
+                    DialogResult result = MessageBox.Show(
+                        $"Apakah Anda yakin ingin mengupdate data siswa {check.Nama} dengan  {namatb.Text} ?",
+                        "Konfirmasi",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question
+);
+                    if (result == DialogResult.No)
+                    {
+                        return;
+                    }
                     check.Nama = namatb.Text;
                     check.KotaID = Convert.ToInt32(kotacb.SelectedValue);
                     check.SekolahID = Convert.ToInt32(sekolahcb.SelectedValue);

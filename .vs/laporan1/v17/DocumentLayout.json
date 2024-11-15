@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\rezag\\source\\repos\\laporan1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|C:\\Users\\rezag\\source\\repos\\laporan1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|c:\\users\\rezag\\source\\repos\\laporan1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|c:\\users\\rezag\\source\\repos\\laporan1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|c:\\users\\rezag\\source\\repos\\laporan1\\dbsekolah.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|C:\\Users\\rezag\\source\\repos\\laporan1\\dbsekolah.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{FF7D1D8C-DC84-4370-9159-B87147084C02}|laporan1.csproj|solutionrelative:dbsekolah.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 17,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,25 +41,24 @@
               "ToolTip": "C:\\Users\\rezag\\source\\repos\\laporan1\\dbsekolah.edmx [Diagram1]",
               "RelativeToolTip": "dbsekolah.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-15T01:37:49.165Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-11-15T01:37:49.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\rezag\\source\\repos\\laporan1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\rezag\\source\\repos\\laporan1\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAgwEsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAiwIIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T01:28:09.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rezag\\source\\repos\\laporan1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
