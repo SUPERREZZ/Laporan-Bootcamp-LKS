@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SekolahDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kota">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nama" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sekolah">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nama" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="KotaID" Type="int" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nama" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="KotaID" Type="int" />
+    <Property Name="SekolahID" Type="int" />
+  </EntityType>
+  <Association Name="FK__Sekolah__KotaID__398D8EEE">
+    <End Role="Kota" Type="Self.Kota" Multiplicity="0..1" />
+    <End Role="Sekolah" Type="Self.Sekolah" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kota">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sekolah">
+        <PropertyRef Name="KotaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__KotaID__3C69FB99">
+    <End Role="Kota" Type="Self.Kota" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kota">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="KotaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__Sekolah__3D5E1FD2">
+    <End Role="Sekolah" Type="Self.Sekolah" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sekolah">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="SekolahID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SekolahDBModelStoreContainer">
+    <EntitySet Name="Kota" EntityType="Self.Kota" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sekolah" EntityType="Self.Sekolah" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Sekolah__KotaID__398D8EEE" Association="Self.FK__Sekolah__KotaID__398D8EEE">
+      <End Role="Kota" EntitySet="Kota" />
+      <End Role="Sekolah" EntitySet="Sekolah" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__KotaID__3C69FB99" Association="Self.FK__Student__KotaID__3C69FB99">
+      <End Role="Kota" EntitySet="Kota" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__Sekolah__3D5E1FD2" Association="Self.FK__Student__Sekolah__3D5E1FD2">
+      <End Role="Sekolah" EntitySet="Sekolah" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

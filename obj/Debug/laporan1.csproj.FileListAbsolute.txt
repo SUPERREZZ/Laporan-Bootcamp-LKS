@@ -1,0 +1,15 @@
+C:\Users\rezag\source\repos\laporan1\bin\Debug\laporan1.exe.config
+C:\Users\rezag\source\repos\laporan1\bin\Debug\laporan1.exe
+C:\Users\rezag\source\repos\laporan1\bin\Debug\laporan1.pdb
+C:\Users\rezag\source\repos\laporan1\bin\Debug\EntityFramework.dll
+C:\Users\rezag\source\repos\laporan1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rezag\source\repos\laporan1\bin\Debug\EntityFramework.xml
+C:\Users\rezag\source\repos\laporan1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.csproj.AssemblyReference.cache
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.Form1.resources
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.Properties.Resources.resources
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.csproj.GenerateResource.cache
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.csproj.CoreCompileInputs.cache
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.csproj.Up2Date
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.exe
+C:\Users\rezag\source\repos\laporan1\obj\Debug\laporan1.pdb
